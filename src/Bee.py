@@ -332,28 +332,6 @@ class Bee :
                 val += current_d
                 time += current_d / algo.s
                 i += 1
-
-                # print(i)
-                # _d = algo.distance_matrix[path_without_afs[i], path_without_afs[i + 1]]
-                # d += _d
-                # if d == 0:
-                #     time += algo.pc
-                #     val += _d
-                #     time += _d / algo.s
-                #     i += 1
-                #     continue
-                # if d > algo.Q / algo.r : 
-                #     closest_AFS = min(list(range(AFSstart, AFSend + 1)) + [0], key = lambda x : algo.distance_matrix[path_without_afs[i], x])
-                #     _d = algo.distance_matrix[path_without_afs[i], closest_AFS]
-                #     d = 0
-                #     num_afs += 1
-                #     path_without_afs.insert(i + 1, closest_AFS)
-                #     time += algo.pa
-                # else : 
-                #     time += algo.pc
-                # val += _d
-                # time += _d / algo.s
-                # i += 1
             
             bee = Bee(algo, path=path_without_afs)
             bee.evaluate()
