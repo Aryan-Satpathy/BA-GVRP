@@ -37,11 +37,11 @@ or an analogous variable) or have a Multiprocessing alternative(```src/Data Coll
 ### Installation Steps
 - Clone the respository
     ```bash
-    git clone <>
+    git clone https://github.com/Aryan-Satpathy/BA-GVRP.git
     ```
 - Make a virtual environment
     ```bash
-    cd <>
+    cd BA-GVRP
     virtualenv <env_name>
     source <env_name/bin/activate>
     ```
